@@ -182,7 +182,7 @@ function App() {
         }): 
           <div className='notFound'>Not Found</div>
         }
-      </div>
+      </div> 
     </>
   )
 }
