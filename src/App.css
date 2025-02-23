@@ -1,0 +1,122 @@
+body{
+  max-width: 1530px;
+  margin: auto;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: blueviolet;
+}
+.card{
+  background-color: white;
+  width: 239px;
+  height: 200px;  
+  box-shadow: 0px 0px 15px gray;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+.color{
+  background-color: green;
+  color: white;
+  padding: 5px;
+}
+.nextColor{
+  background-color: red;
+  color: white;
+  padding: 5px;
+}
+.main-box{
+  width: 60%;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.btnTool{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.btnTool button{
+  border: none;
+  background-color: brown;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px 30px;
+}
+.btnTool button:hover{
+  cursor: pointer;
+  background-color: white;
+  color: brown;
+  border: 1px solid brown;
+  transition: 0.5s ease;
+}
+.tool{
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.filter-data{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.filter-data input{
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 0px 10px rgb(204, 203, 203);
+}
+.filter-data select{
+  padding: 10px;
+  border-radius: 5px;
+}
+.modal_flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.modal_flex input{
+    width: 350px;
+    padding: 10px;
+}
+.modal_flex select{
+  padding: 10px;
+  border-radius: 5px;
+}
+.notFound{
+  text-align: center;
+  font-size: 50px;
+  color: red;
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  .main-box {
+    width: 80%;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .btnTool {
+    flex-direction: column;
+  }
+  .tool{
+    width: 90%;
+    gap: 20px;
+  }
+  .filter-data select {
+    width: 100%;
+  }
+
+  .modal_flex input {
+    width: 100%;
+  }
+}
